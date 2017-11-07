@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 05-11-2017 0:33:15 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+  <class catalog="prueba2" name="dej4501.model.Comunas" optimistic-lock="version" table="comunas">
+    <id name="comunaId" type="java.lang.Integer">
+      <column name="comuna_id"/>
+      <generator class="identity"/>
+    </id>
+    <property name="comunaNombre" type="string">
+      <column length="64" name="comuna_nombre" not-null="true"/>
+    </property>
+    <property name="provinciaId" type="int">
+      <column name="provincia_id" not-null="true"/>
+    </property>
+  </class>
+</hibernate-mapping>
